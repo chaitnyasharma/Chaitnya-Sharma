@@ -3,134 +3,264 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Chaitnya Sharma | Frontend Developer | Fast, Clean Landing Pages with HTML, CSS & AI Tools">
+  <title>Building the Web One Line at a Time</title>
+  <meta name="title" content="Building the Web One Line at a Time">
+  <meta name="description" content="Crafting fast, elegant, and scalable websites—one line at a time. Partner with Chaitnya Sharma for frontend excellence and launch-ready MVPs.">
   <meta name="author" content="Chaitnya Sharma">
-  <title>Chaitnya Sharma - Frontend Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Building the Web One Line at a Time">
+  <meta property="og:description" content="Crafting fast, elegant, and scalable websites—one line at a time. Partner with Chaitnya Sharma for frontend excellence and launch-ready MVPs.">
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
-      background-color: #f9f9f9;
       font-family: 'Inter', sans-serif;
-      color: #333;
+      background-color: #f9f9f9;
+      color: #212121;
       line-height: 1.6;
-      padding: 40px 20px;
+      transition: background 0.3s, color 0.3s;
     }
-
-    .container {
-      background: #fff;
-      max-width: 700px;
-      margin: auto;
-      padding: 40px 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      animation: fadeIn 0.8s ease-in;
+    body.dark {
+      background: #0d1117;
+      color: #e6edf3;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    header {
+      background-color: #fff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-
-    h1 {
-      font-size: 32px;
-      color: #111;
-      margin-bottom: 20px;
-    }
-
-    p {
-      margin-bottom: 20px;
-      font-size: 16px;
-    }
-
-    h2 {
-      font-size: 22px;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      color: #222;
-    }
-
-    a.button {
-      display: inline-block;
-      margin: 8px 5px;
-      padding: 12px 22px;
-      font-size: 15px;
+    header.dark { background-color: #161b22; }
+    header h1 { font-size: 22px; font-weight: 800; letter-spacing: 1px; }
+    nav a {
+      margin-left: 20px;
       text-decoration: none;
-      color: #fff;
-      border-radius: 6px;
-      transition: background 0.3s ease;
+      color: inherit;
+      font-weight: 600;
+      position: relative;
     }
-
-    .fiverr { background-color: #1dbf73; }
-    .fiverr:hover { background-color: #169e5d; }
-
-    .journey { background-color: #f57c00; }
-    .journey:hover { background-color: #db6e00; }
-
-    .chronicles { background-color: #1976d2; }
-    .chronicles:hover { background-color: #1156a0; }
-
-    .talentmarket { background-color: #673ab7; }
-    .talentmarket:hover { background-color: #512a9d; }
-
-    .herohire { background-color: #009688; }
-    .herohire:hover { background-color: #00796b; }
-
-    .contact { background-color: #444; }
-    .contact:hover { background-color: #222; }
-
-    strong {
+    nav a::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      background: #1dbf73;
+      transition: width 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    .theme-toggle {
+      border: none;
+      background: transparent;
+      font-size: 22px;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+    .hero {
+      padding: 120px 20px 80px;
+      text-align: center;
+      background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+      position: relative;
+      overflow: hidden;
+    }
+    body.dark .hero { background: linear-gradient(to bottom right, #0d1117, #161b22); }
+    .hero h2 {
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
+      margin-bottom: 20px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 640px;
+      margin: 0 auto 30px;
+      opacity: 0.9;
+    }
+    .hero a {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #1dbf73;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 16px;
+      box-shadow: 0 8px 20px rgba(29,191,115,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .hero a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(29,191,115,0.5);
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h3 {
+      font-size: 26px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .project {
+      margin-bottom: 30px;
+      padding: 24px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease-in-out;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    body.dark .project {
+      background: #161b22;
+    }
+    .project h4 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    .project a {
+      color: #1dbf73;
+      text-decoration: none;
       font-weight: 600;
     }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 26px;
-      }
-
-      .container {
-        padding: 30px 20px;
-      }
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    footer a {
+      color: #1dbf73;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    form button {
+      padding: 12px 24px;
+      background: #1dbf73;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    form button:hover {
+      background-color: #17a864;
     }
   </style>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZDN46H4DL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RZDN46H4DL');
-  </script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZDN46H4DL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RZDN46H4DL');
+</script>
 <body>
-  <div class="container">
-    <h1>I build fast, clean websites using HTML, CSS & AI tools</h1>
-    <p>Hi, I’m <strong>Chaitnya Sharma</strong> — a frontend developer helping early-stage founders, freelancers, and small businesses get online fast. I use HTML, CSS, and AI tools like ChatGPT to deliver fast, clean, mobile-friendly designs.</p>
-    
-    <p><strong>🚀 I’m offering 2 free landing page builds</strong> to build trust and gather feedback. Need a simple site or MVP? Message me — and I’ll build it for free.</p>
-    
-    <h2>Projects</h2>
-
-    <p><strong>Jaipur Journey</strong><br>A blog-style site for travel stories and experiences in Jaipur.</p>
-    <a href="https://jaipurjourney.lovestoblog.com/?i=2" target="_blank" class="button journey">Visit Jaipur Journey</a>
-
-    <p><strong>Jaipur Chronicles</strong><br>Clean, content-focused site showcasing culture and life in Jaipur.</p>
-    <a href="https://jaipurchronicles.lovestoblog.com/?i=1" target="_blank" class="button chronicles">Visit Jaipur Chronicles</a>
-
-    <p><strong>TalentMarket</strong><br>Simple MVP concept for talent/freelancer job discovery.</p>
-    <a href="https://chaitnyasharma.github.io/TalentMarket/" target="_blank" class="button talentmarket">Visit TalentMarket</a>
-
-    <p><strong>HeroHire</strong><br>A clean landing page for freelancers — made with Carrd.</p>
-    <a href="https://herohire.carrd.co/" target="_blank" class="button herohire">Visit HeroHire</a>
-
-    <h2>Hire or Contact Me</h2>
-    <a href="https://www.fiverr.com/s/VYLyv6e" target="_blank" class="button fiverr">Hire Me on Fiverr</a>
-    <a href="mailto:chaitnyasharma39@gmail.com?subject=Landing%20Page%20Request" class="button contact">Email Me Directly</a>
+  <header>
+    <h1>Chaitnya Sharma</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+    </nav>
+  </header>
+  
+  <div class="hero">
+    <h2><span id="typed"></span></h2>
+    <p>I'm a passionate frontend developer crafting clean, fast websites one line of code at a time. Learning, building, and helping startups launch their ideas with HTML, CSS, and AI-powered tools.</p>
+    <a href="#contact">Launch Your Site Now</a>
   </div>
+  
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="project" data-aos="fade-up">
+      <h4>Jaipur Journey</h4>
+      <p>Travel storytelling blog built with semantic HTML & handcrafted CSS.</p>
+      <a href="https://jaipurjourney.lovestoblog.com/?i=2" target="_blank">Visit</a>
+    </div>
+    <div class="project" data-aos="fade-up">
+      <h4>Jaipur Chronicles</h4>
+      <p>Culture-focused responsive site with UX simplicity at heart.</p>
+      <a href="https://jaipurchronicles.lovestoblog.com/?i=1" target="_blank">Visit</a>
+    </div>
+    <div class="project" data-aos="fade-up">
+      <h4>TalentMarket</h4>
+      <p>Prototype for fast freelancer-client matchmaking with MVP focus.</p>
+      <a href="https://chaitnyasharma.github.io/TalentMarket/" target="_blank">Visit</a>
+    </div>
+    <div class="project" data-aos="fade-up">
+      <h4>HeroHire</h4>
+      <p>Conversion-optimized freelancer landing page hosted on Carrd.</p>
+      <a href="https://herohire.carrd.co/" target="_blank">Visit</a>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <h3>Let's Build the Future</h3>
+    <p>🚀 Accepting just 2 new landing page MVPs this week — reach out below.</p>
+    <form action="https://formsubmit.co/chaitnyasharma39@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Tell me what you're building..." rows="5" required></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Chaitnya Sharma • Future-Ready Frontends</p>
+    <p>
+      <a href="#projects">Projects</a> |
+      <a href="#contact">Contact</a>
+    </p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    new Typed("#typed", {
+      strings: ["Building the Web One Line at a Time.",
+        "Learning fast. Building faster.",
+        "Clean code. Smart sites.",
+        "HTML, CSS & AI-powered"],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true
+    });
+    AOS.init({ duration: 1000 });
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      document.querySelector('header').classList.toggle('dark');
+      localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+    }
+    window.onload = () => {
+      if(localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark');
+        document.querySelector('header').classList.add('dark');
+      }
+    };
+  </script>
 </body>
 </html>

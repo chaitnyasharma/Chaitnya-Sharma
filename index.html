@@ -1,300 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Building the Web One Line at a Time</title>
-  <meta name="title" content="Building the Web One Line at a Time">
-  <meta name="description" content="Crafting fast, elegant, and scalable websites—one line at a time. Partner with Chaitnya Sharma for frontend excellence and launch-ready MVPs.">
-  <meta name="author" content="Chaitnya Sharma">
-  <meta property="og:title" content="Building the Web One Line at a Time">
-  <meta property="og:description" content="Crafting fast, elegant, and scalable websites—one line at a time. Partner with Chaitnya Sharma for frontend excellence and launch-ready MVPs.">
-  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
-  <meta property="og:url" content="https://yourdomain.com">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Chaitnya Sharma | AI-Powered Web Developer & Designer</title>
+    <meta name="title" content="Chaitnya Sharma | AI-Powered Web Developer & Designer">
+    <meta name="description" content="Chaitnya Sharma is a frontend developer specializing in building high-performance, AI-enhanced websites and landing pages. Available for freelance projects.">
+    <meta name="keywords" content="Chaitnya Sharma, Web Developer, Frontend Developer, AI Web Design, HTML CSS Specialist, Freelance Developer, Jaipur">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="Chaitnya Sharma">
 
-<title>Chaitnya Sharma | Remote Frontend Developer for Startups & MVPs</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chaitnyasharma.github.io/Chaitnya-Sharma/">
+    <meta property="og:title" content="Chaitnya Sharma | Building the Web with AI">
+    <meta property="og:description" content="I build fast, modern, and immersive websites using code and AI tools. Check out my portfolio.">
+    <meta property="og:image" content="https://chaitnyasharma.github.io/Chaitnya-Sharma/assets/preview-banner.png">
 
-<meta name="description" content="I help global startups launch high-converting landing pages and MVPs. clean code, fast communication, and quick turnaround. Available for remote freelance work.">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chaitnyasharma.github.io/Chaitnya-Sharma/">
+    <meta property="twitter:title" content="Chaitnya Sharma | AI-Powered Web Developer">
+    <meta property="twitter:description" content="I build fast, modern, and immersive websites using code and AI tools. Check out my portfolio.">
+    <meta property="twitter:image" content="https://chaitnyasharma.github.io/Chaitnya-Sharma/assets/preview-banner.png">
 
-<meta name="keywords" content="Remote Frontend Developer, SaaS MVP Builder, Landing Page Specialist, Freelance Web Developer, React HTML CSS Expert, Startup Website, Chaitnya Sharma">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" type="image/png">
 
-<meta name="author" content="Chaitnya Sharma">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RZDN46H4DL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RZDN46H4DL');
+    </script>
 
-<meta property="og:title" content="Launch Your Startup's MVP in 48 Hours">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Chaitnya Sharma",
+      "url": "https://chaitnyasharma.github.io/Chaitnya-Sharma/",
+      "jobTitle": "Web Developer",
+      "knowsAbout": ["HTML", "CSS", "Web Design", "AI Tools"],
+      "image": "https://chaitnyasharma.github.io/Chaitnya-Sharma/assets/preview-banner.png",
+      "sameAs": [
+        "https://github.com/Chaitnya-Sharma"
+      ]
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-<meta property="og:description" content="Professional frontend developer specializing in fast, high-quality landing pages for startups. See my portfolio and current availability.">
+    <style>
+        :root {
+            --bg: #050505;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --accent: #6d28d9;
+            --accent-glow: #8b5cf6;
+            --text-main: #ffffff;
+            --text-muted: #9ca3af;
+        }
 
-<meta property="og:image" content="https://chaitnyasharma.github.io/Chaitnya-Sharma/assets/preview-banner.png">
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
 
-<meta property="og:url" content="https://chaitnyasharma.github.io/Chaitnya-Sharma/">
-<meta property="og:type" content="website">
+        /* Animated Background */
+        .background-animate {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: radial-gradient(circle at 50% 50%, rgba(109, 40, 217, 0.15), transparent 60%),
+                        radial-gradient(circle at 10% 10%, rgba(59, 130, 246, 0.1), transparent 40%);
+            z-index: -1;
+            filter: blur(60px);
+            animation: moveBackground 15s infinite alternate;
+        }
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Chaitnya Sharma | Remote Frontend Dev">
-<meta name="twitter:description" content="Building clean, fast websites for startups worldwide. Accepting new projects.">
-<meta name="twitter:image" content="https://chaitnyasharma.github.io/Chaitnya-Sharma/assets/preview-banner.png">
-  
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #212121;
-      line-height: 1.6;
-      transition: background 0.3s, color 0.3s;
-    }
-    body.dark {
-      background: #0d1117;
-      color: #e6edf3;
-    }
-    header {
-      background-color: #fff;
-      padding: 20px 40px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    header.dark { background-color: #161b22; }
-    header h1 { font-size: 22px; font-weight: 800; letter-spacing: 1px; }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: inherit;
-      font-weight: 600;
-      position: relative;
-    }
-    nav a::after {
-      content: "";
-      display: block;
-      height: 2px;
-      width: 0;
-      background: #1dbf73;
-      transition: width 0.3s;
-    }
-    nav a:hover::after {
-      width: 100%;
-    }
-    .theme-toggle {
-      border: none;
-      background: transparent;
-      font-size: 22px;
-      cursor: pointer;
-      margin-left: 20px;
-    }
-    .hero {
-      padding: 120px 20px 80px;
-      text-align: center;
-      background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
-      position: relative;
-      overflow: hidden;
-    }
-    body.dark .hero { background: linear-gradient(to bottom right, #0d1117, #161b22); }
-    .hero h2 {
-      font-size: clamp(2.5rem, 6vw, 3.5rem);
-      margin-bottom: 20px;
-      font-weight: 800;
-      line-height: 1.2;
-    }
-    .hero p {
-      font-size: 18px;
-      max-width: 640px;
-      margin: 0 auto 30px;
-      opacity: 0.9;
-    }
-    .hero a {
-      display: inline-block;
-      padding: 14px 28px;
-      background-color: #1dbf73;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 16px;
-      box-shadow: 0 8px 20px rgba(29,191,115,0.3);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .hero a:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 25px rgba(29,191,115,0.5);
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    section h3 {
-      font-size: 26px;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .project {
-      margin-bottom: 30px;
-      padding: 24px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease-in-out;
-    }
-    .project:hover {
-      transform: translateY(-5px);
-    }
-    body.dark .project {
-      background: #161b22;
-    }
-    .project h4 {
-      font-size: 20px;
-      margin-bottom: 5px;
-    }
-    .project a {
-      color: #1dbf73;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    footer {
-      background: #000;
-      color: #fff;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    footer a {
-      color: #1dbf73;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 14px;
-      margin: 12px 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-    form button {
-      padding: 12px 24px;
-      background: #1dbf73;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 600;
-    }
-    form button:hover {
-      background-color: #17a864;
-    }
-  </style>
+        @keyframes moveBackground {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.2); opacity: 1; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .nav-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: -0.5px;
+            background: linear-gradient(to right, #fff, var(--accent-glow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cta-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--card-border);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .cta-btn:hover { background: #fff; color: #000; }
+
+        /* Hero */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            line-height: 1.1;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero h1 span {
+            display: block;
+            background: linear-gradient(to bottom, #fff, #999);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, var(--accent-glow), #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        /* 3D Cards */
+        .work-section { padding: 50px 0 100px; }
+        
+        .section-header { margin-bottom: 60px; text-align: center; }
+        .section-header h2 { font-size: 2.5rem; font-family: 'Space Grotesk'; margin-bottom: 10px; }
+        .section-header p { color: var(--text-muted); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 30px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+            transition: border-color 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 350px;
+            backdrop-filter: blur(10px);
+        }
+
+        .card:hover { border-color: var(--accent-glow); }
+        .card-content { transform: translateZ(30px); }
+
+        .card-icon {
+            font-size: 2.5rem;
+            color: var(--accent-glow);
+            margin-bottom: 20px;
+            display: inline-block;
+            transform: translateZ(50px);
+        }
+
+        .card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+        .card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
+
+        .card-link {
+            margin-top: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transform: translateZ(30px);
+        }
+        .card-link i { transition: 0.3s; }
+        .card-link:hover i { transform: translateX(5px); color: var(--accent-glow); }
+
+        /* Services */
+        .services {
+            padding: 50px 0;
+            border-top: 1px solid var(--card-border);
+            text-align: center;
+        }
+        
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .pill {
+            padding: 10px 25px;
+            border-radius: 50px;
+            border: 1px solid var(--card-border);
+            background: rgba(255,255,255,0.03);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .pill:hover {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        /* Contact Form */
+        .contact {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(20, 20, 20, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-family: 'Space Grotesk';
+            text-align: center;
+        }
+        
+        .contact p {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .form-group { margin-bottom: 20px; }
+
+        input, textarea {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--card-border);
+            padding: 16px;
+            color: #fff;
+            border-radius: 12px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent-glow);
+            box-shadow: 0 0 15px rgba(109, 40, 217, 0.2);
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-glow));
+            color: #fff;
+            border: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(109, 40, 217, 0.4);
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--card-border);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+            .contact-container { padding: 30px 20px; }
+        }
+    </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZDN46H4DL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RZDN46H4DL');
-</script>
 <body>
-  <header>
-    <h1>Chaitnya Sharma</h1>
+
+    <div class="background-animate"></div>
+
     <nav>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+        <div class="nav-container">
+            <div class="logo">Chaitnya Sharma.</div>
+            <a href="#contact" class="cta-btn">Hire Me</a>
+        </div>
     </nav>
-  </header>
-  
-  <div class="hero">
-    <h2><span id="typed"></span></h2>
-    <p>I'm a passionate frontend developer crafting clean, fast websites one line of code at a time. Learning, building, and helping startups launch their ideas with HTML, CSS, and AI-powered tools.</p>
-    <a href="#contact">Launch Your Site Now</a>
-  </div>
-  
-  <section id="projects">
-    <h3>Projects</h3>
-    <div class="project" data-aos="fade-up">
-      <h4>Jaipur Journey</h4>
-      <p>Travel storytelling blog built with semantic HTML & handcrafted CSS.</p>
-      <a href="https://jaipurjourney.lovestoblog.com/?i=2" target="_blank">Visit</a>
-    </div>
-    <div class="project" data-aos="fade-up">
-      <h4>Jaipur Chronicles</h4>
-      <p>Culture-focused responsive site with UX simplicity at heart.</p>
-      <a href="https://jaipurchronicles.lovestoblog.com/?i=1" target="_blank">Visit</a>
-    </div>
-    <div class="project" data-aos="fade-up">
-      <h4>TalentMarket</h4>
-      <p>Prototype for fast freelancer-client matchmaking with MVP focus.</p>
-      <a href="https://chaitnyasharma.github.io/TalentMarket/" target="_blank">Visit</a>
-    </div>
-    <div class="project" data-aos="fade-up">
-      <h4>HeroHire</h4>
-      <p>Conversion-optimized freelancer landing page hosted on Carrd.</p>
-      <a href="https://herohire.carrd.co/" target="_blank">Visit</a>
-    </div>
-    <div class="project" data-aos="fade-up">
-      <h4>Ember&Bean</h4>
-      <p>A cozy modern café demo website featuring specialty coffee, warm aesthetics, and an interactive menu with smooth, responsive design.</p>
-      <a href="https://chaitnyasharma.github.io/Ember-Beans-//" target="_blank">Visit</a>
-    </div>
-  </section>
-  
-  <section id="contact">
-    <h3>Let's Build the Future</h3>
-    <p>🚀 Accepting just 2 new landing page MVPs this week — reach out below.</p>
-    <form action="https://formsubmit.co/chaitnyasharma39@gmail.com" method="POST">
-  <input type="hidden" name="_next" value="https://chaitnyasharma.github.io/Chaitnya-Sharma/" />
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Tell me what you're building..." rows="5" required></textarea>
-  <button type="submit">Send Request</button>
-      <input type="hidden" name="_next" value="https://chaitnyasharma.github.io/Chaitnya-Sharma/thank-you.html">
-    </form>
-  </section>
-  
-  <footer>
-    <p>&copy; 2025 Chaitnya Sharma • Future-Ready Frontends</p>
-    <p>
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
-    </p>
-  </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    new Typed("#typed", {
-      strings: ["Building the Web One Line at a Time.",
-        "Learning fast. Building faster.",
-        "Clean code. Smart sites.",
-        "HTML, CSS & AI-powered"],
-      typeSpeed: 60,
-      backSpeed: 30,
-      loop: true
-    });
-    AOS.init({ duration: 1000 });
-    function toggleTheme() {
-      document.body.classList.toggle('dark');
-      document.querySelector('header').classList.toggle('dark');
-      localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-    }
-    window.onload = () => {
-      if(localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark');
-        document.querySelector('header').classList.add('dark');
-      }
-    };
-  </script>
+
+    <section class="hero">
+        <div class="container">
+            <h1 data-aos="fade-up">
+                <span>Building the Web</span>
+                <span class="gradient-text">Supercharged by AI.</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+                I combine modern frontend coding with advanced AI tools to build faster, smarter, and cleaner websites. 
+                Experience the future of development.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <a href="#work" style="color: #fff; text-decoration: none; border-bottom: 1px solid #fff; padding-bottom: 5px;">View AI-Enhanced Projects <i class="fas fa-arrow-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Selected Work</h2>
+                <p>Responsive interfaces built with code & intelligence.</p>
+            </div>
+
+            <div class="grid">
+                
+                <div class="card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+                    <div class="card-content">
+                        <i class="fas fa-rocket card-icon"></i>
+                        <h3>HeroHire</h3>
+                        <p>A high-conversion landing page. Optimized for speed using AI-driven asset compression and clean code structure.</p>
+                        <a href="https://herohire.carrd.co/" target="_blank" class="card-link">Visit Site <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+                    <div class="card-content">
+                        <i class="fas fa-users card-icon"></i>
+                        <h3>TalentMarket</h3>
+                        <p>Prototype for a freelance marketplace. User flows were refined using AI behavioral modeling to ensure intuitive navigation.</p>
+                        <a href="https://chaitnyasharma.github.io/TalentMarket/" target="_blank" class="card-link">Visit Site <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+                    <div class="card-content">
+                        <i class="fas fa-mug-hot card-icon"></i>
+                        <h3>Ember & Bean</h3>
+                        <p>Modern e-commerce concept. Features dark-mode aesthetics and smooth, physics-based interactions.</p>
+                        <a href="https://chaitnyasharma.github.io/Ember-Beans-//" target="_blank" class="card-link">Visit Site <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                 <div class="card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+                    <div class="card-content">
+                        <i class="fas fa-map-marked-alt card-icon"></i>
+                        <h3>Jaipur Journey</h3>
+                        <p>Content-rich travel blog. Typography and semantic structure optimized for maximum readability.</p>
+                        <a href="https://jaipurjourney.lovestoblog.com/?i=2" target="_blank" class="card-link">Visit Site <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+                    <div class="card-content">
+                        <i class="fas fa-landmark card-icon"></i>
+                        <h3>Jaipur Chronicles</h3>
+                        <p>A deep dive into cultural storytelling. Features immersive layouts and AI-assisted content structure.</p>
+                        <a href="https://jaipurchronicles.lovestoblog.com/?i=1" target="_blank" class="card-link">Visit Site <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 0.9rem; letter-spacing: 1px;">MY TOOLKIT</p>
+            <div class="service-list">
+                <span class="pill">AI-Assisted Coding</span>
+                <span class="pill">Responsive Design</span>
+                <span class="pill">UI Animation</span>
+                <span class="pill">Performance Optimization</span>
+                <span class="pill">Rapid Prototyping</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-container" data-aos="zoom-in">
+                <h2>Let's Talk</h2>
+                <p>I am currently open for freelance projects. Send me a message and I'll get back to you within 24 hours.</p>
+                
+                <form action="https://formsubmit.co/chaitnyasharma39@gmail.com" method="POST">
+                    
+                    <input type="hidden" name="_next" value="https://chaitnyasharma.github.io/Chaitnya-Sharma/thank-you.html">
+                    <input type="hidden" name="_subject" value="New Inquiry from Portfolio">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tell me what you're building..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Request</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Chaitnya Sharma. Crafted with Code & AI.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    
+    <script>
+        AOS.init({ duration: 1000, once: true, offset: 50 });
+        VanillaTilt.init(document.querySelectorAll(".card"), { max: 15, speed: 400, glare: true, "max-glare": 0.2 });
+    </script>
 </body>
 </html>
-
-

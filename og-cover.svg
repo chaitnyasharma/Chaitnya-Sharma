@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050505"/>
+      <stop offset="100%" stop-color="#1e1038"/>
+    </linearGradient>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="220" fill="#6d28d9" opacity="0.25"/>
+  <circle cx="160" cy="520" r="180" fill="#3b82f6" opacity="0.18"/>
+  <text x="80" y="250" font-family="Arial, sans-serif" font-size="36" fill="#a78bfa">AI-POWERED WEB DEVELOPER &amp; DESIGNER</text>
+  <text x="80" y="360" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="url(#t)">Chaitnya Sharma</text>
+  <text x="80" y="430" font-family="Arial, sans-serif" font-size="28" fill="#e5e7eb">Building the Web Supercharged by AI.</text>
+  <text x="80" y="540" font-family="Arial, sans-serif" font-size="22" fill="#9ca3af">International freelance · HTML · CSS · JS · Landing pages</text>
+</svg>

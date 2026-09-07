@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chaitnyasharma.github.io/Chaitnya-Sharma/sitemap.xml
+Sitemap: https://chaitnyasharma.in/sitemap.xml

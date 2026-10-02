@@ -3,52 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You — Chaitnya Sharma</title>
-  <meta name="description" content="Thanks for contacting Chaitnya Sharma — AI-Powered Web Developer & Designer. I'll get back to you within 24 hours.">
+  <title>Thank you — Chaitnya Sharma</title>
+  <meta name="description" content="Your message was sent. Chaitnya Sharma will reply within one working day.">
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://chaitnyasharma.in/thank-you.html">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://chaitnyasharma.in/favicon-32.png">
+  <link rel="apple-touch-icon" href="https://chaitnyasharma.in/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
+    :root { --bg:#0b0c0e; --text:#ece8e1; --muted:#9a958c; --gold:#c4b08a; --line:#2a2d36; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Outfit', sans-serif;
-      background: #050505;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       min-height: 100vh;
-      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
       text-align: center;
-      padding: 20px;
-      background-image: radial-gradient(circle at 50% 30%, rgba(109, 40, 217, 0.35), transparent 55%);
+    }
+    main { max-width: 560px; }
+    p.kicker {
+      color: var(--gold);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 18px;
     }
     h1 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: clamp(2rem, 6vw, 3rem);
-      margin-bottom: 16px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(2.6rem, 7vw, 4.2rem);
+      line-height: 1.05;
+      margin-bottom: 18px;
     }
-    p {
-      font-size: 1.15rem;
-      max-width: 560px;
-      color: #d1d5db;
-      line-height: 1.6;
-    }
+    p { color: var(--muted); font-size: 1.05rem; line-height: 1.6; }
     a {
-      margin-top: 28px;
-      padding: 14px 28px;
-      background: linear-gradient(135deg, #6d28d9, #8b5cf6);
-      color: #fff;
+      display: inline-block;
+      margin-top: 32px;
+      background: var(--text);
+      color: var(--bg);
       text-decoration: none;
-      border-radius: 12px;
       font-weight: 600;
+      padding: 12px 18px;
     }
   </style>
 </head>
 <body>
-  <h1>Thank You!</h1>
-  <p>Your message has been sent successfully.<br>I'll get back to you shortly. 🚀</p>
-  <a href="index.html">← Back to Home</a>
+  <main>
+    <p class="kicker">Message received</p>
+    <h1>Thank you.</h1>
+    <p>Your note is in. I will reply within one working day.</p>
+    <a href="index.html">Back to the site</a>
+  </main>
 </body>
 </html>
